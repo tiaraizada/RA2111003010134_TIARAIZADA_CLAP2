@@ -1,0 +1,23 @@
+// John is very much interested in Mathematics. One day when he was learning about different
+// types of mathematical numbers, he came across a concept of “GOOD Number”. If there is no
+// “Zero” in the number, then it is a GOOD number. John is a beginner in C programming and
+// he needs your help to solve it.
+#include <stdio.h>
+
+int main() {
+  int n,k=1;
+  printf("enter n\n");
+  scanf("%d",&n);
+  while(n>0)
+    {
+      if(n%10==0)
+        k=0;
+      n/=10;
+    }
+  if(k==1)
+  printf("good number");
+  else
+    printf("bad number");
+  return 0;
+}
+//Footer
